@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 15px;
+    background-color: #1D54CD;
+    font-size: 32px;
+    padding: 8px 16px 8px 16px;
+    align-items: center;
+}
+#film_input{
+   width: 600px;
+   height: 30px;
+}
+#btn_pesquisar{
+    width: 100px;
+    height: 30px;
+    background-color: #FF6565;
+    border: solid black 1px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    
+}
+.teste2{
+    background-color: #D9D9D9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 32px;
+}
+.teste{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    align-items: center;
+    border-radius: 16px;
+    padding: 10px;
+}
+.teste img{
+    border-radius: 20px;
+    height: 300px;
+
+}
+.teste h3{
+    font-size: 24px;
+
+}
+
+footer{
+    font-size:32px;
+    text-align: center;
+    background-color: #1D54CD;
+}
