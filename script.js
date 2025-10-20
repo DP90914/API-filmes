@@ -15,21 +15,22 @@ async function getMovieList() {
 }
 async function createMovieList() {
     const images = await getMovieList()
-    const container = document.getElementById('main_index')
-    const container2 = document.createElement('div')
-    const container3 = document.createElement('div')
+
     
     images.results.forEach(item =>{
 
         const img = document.createElement('img')
 
-    
+        const container = document.getElementById('main_index')
+        const container2 = document.createElement('div')
+        const container3 = document.createElement('div')
         img.src = `https://image.tmdb.org/t/p/w500/${item['poster_path']}`
         container2.appendChild(img)
+        container.appendChild(container2)
+        container2.classList.add('img_container')
+        container3.classList.add('main_container')
     })
-    container.appendChild(container2)
-    container2.classList.add('img_container')
-    container3.classList.add('main_container')
+
 }
 
 
