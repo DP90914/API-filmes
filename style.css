@@ -105,28 +105,30 @@ main {
     background-color: #FF6565;
 }
 
-#hero {
+.container {
     display: flex;
-    gap: 80px;
+    font-size: medium;
 }
 
-#hero img {
-    width: auto;
-    height: 650px;
-    margin: 35px 0px 35px 24px;
-    border: solid white 6px;
-    border-radius: 16px;
+.container img {
+    margin: 16px;
+    border-radius: 8px;
 }
 
-#hero div {
+.container_hero {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: space-between;
+    margin: 18px;
+    gap: 14px;
+    background-color: #ffffff;
     border-radius: 16px;
-    padding: 32px 20px 32px 20px;
-    margin: 35px 32px 35px 0px;
-    background-color: white;
+}
 
+.container_bonus {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .titulo {
@@ -136,7 +138,7 @@ main {
 
 .sinopse {
     text-align: center;
-    font-size: 2.25rem;
+    font-size: 2rem;
 }
 
 .informacao_bonus {
