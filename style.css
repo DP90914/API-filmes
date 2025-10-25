@@ -1,14 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+
+
+body {
     height: 100vh;
     background-color: #D9D9D9;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -19,72 +22,95 @@ header{
     padding: 8px 16px 8px 16px;
     align-items: center;
 }
-#nome_pesquisado{
+
+#nome_pesquisado {
     background-color: #ffffff;
     margin-right: 45%;
     padding: 8px 20px 8px 20px;
 }
-#film_input{
-   width: 600px;
-   height: 30px;
+
+#film_input {
+    width: 600px;
+    height: 30px;
 }
-#btn_pesquisar{
+
+#btn_pesquisar {
     width: 100px;
     height: 30px;
     background-color: #FF6565;
     border: solid black 1px;
 }
-.btn{
+
+.btn {
     display: flex;
     margin-right: 32px;
     margin-left: 32px;
     justify-content: space-between;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: #ffffff;
+    background-color: #efeff8;
     align-items: center;
     border-radius: 8px;
     padding: 10px;
     gap: 16px
-    
-}
-.img_container img:hover{
-    height: 320px;
 }
 
-.img_container img{
+.img_container {
+    width: 200px;
+}
+
+.img_container:hover {
+    height: auto;
+    border: black 1px solid;
+    border-radius: 8px;
+}
+
+.subtible {
+    display: none;
+}
+
+.img_container:hover .subtible {
+    display: flex;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.img_container img {
     border-radius: 10px;
     height: 300px;
-
+    width: 200px;
 }
-.img_container h3{
+
+.img_container h3 {
     font-size: 24px;
 
 }
 
-#anterior_button{
+#anterior_button {
     height: 30px;
     width: 250px;
     background-color: #FF6565;
 }
 
-#proximo_button{
+#proximo_button {
     height: 30px;
     width: 250px;
     background-color: #FF6565;
 }
 
-#hero{
+#hero {
     display: flex;
     gap: 80px;
 }
 
-#hero img{
+#hero img {
     width: auto;
     height: 650px;
     margin: 35px 0px 35px 24px;
@@ -92,35 +118,38 @@ main{
     border-radius: 16px;
 }
 
-#hero div{
+#hero div {
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
     border-radius: 16px;
     padding: 32px 20px 32px 20px;
     margin: 35px 32px 35px 0px;
     background-color: white;
 
 }
-.titulo{
+
+.titulo {
     text-align: center;
     font-size: 3rem;
 }
-.sinopse{
+
+.sinopse {
     text-align: center;
     font-size: 2.25rem;
 }
 
-.informacao_bonus{
+.informacao_bonus {
     font-size: 1.75rem;
 }
-.pesquisa_hero{
+
+.pesquisa_hero {
     display: flex;
     gap: 10px;
     margin: 5px 0px 5px 24px;
 }
 
-.pesquisa_hero img{
+.pesquisa_hero img {
     width: auto;
     height: 282px;
 
@@ -128,7 +157,7 @@ main{
     border-radius: 16px;
 }
 
-.pesquisa_hero div{
+.pesquisa_hero div {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -137,21 +166,22 @@ main{
     background-color: white;
 
 }
-.pesquisa_hero div .titulo{
+
+.pesquisa_hero div .titulo {
     text-align: center;
     font-size: 2.2rem;
 }
-.pesquisa_hero div .sinopse{
+
+.pesquisa_hero div .sinopse {
     text-align: center;
     font-size: 2rem;
 }
 
-footer{
+footer {
     display: flex;
     height: 100px;
-    font-size:32px;
+    font-size: 32px;
     justify-content: center;
     align-items: center;
     background-color: #1D54CD;
 }
-
