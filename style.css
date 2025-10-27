@@ -71,7 +71,10 @@ main {
 
 .img_container {
     width: 200px;
+    height: 380px;
+    display: block;
 }
+
 
 .img_container:hover {
     height: auto;
@@ -85,7 +88,6 @@ main {
    font-size: 1rem;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    text-align: center;
-   justify-content: center;
    flex-wrap: wrap;
 }
 
