@@ -80,16 +80,18 @@ main {
 }
 
 .subtible {
-    display: none;
+   visibility: hidden;
+   display: flex;
+   font-size: 1rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: center;
+   justify-content: center;
+   flex-wrap: wrap;
 }
 
 .img_container:hover .subtible {
-    display: flex;
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap;
+    visibility: visible;
+
 }
 
 .img_container img {
